@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Visity</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="owl/css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="owl/css/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<!--        Banner        -->
+<section class="banner background" id="banner">
+
+  <header class="position-fixed position-lg-static w-100">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container">
+        <div class="row w-100 align-items-center mr-0 mr-sm-0 mr-md-0 ">
+          <!-- Brand -->
+          <div class="col-xl-3 col-lg-3 col-md-8 col-sm-8 col-6 order-1 order-lg-1">
+            <a class="navbar-brand" href="./">
+              <img src="images/logo.png" alt="logo" class="img-fluid">
+            </a>
+          </div>
+
+          <!-- Navbar links -->
+          <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 order-3 order-lg-2 pr-0 pr-lg-3">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav text-uppercase mt-3 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Luxuries</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">book now</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 pr-0 pr-lg-3 d-flex flex-wrap order-2 order-lg-3 justify-content-end align-items-center">
+            <ul class="d-flex justify-content-end flex-wrap social-ul">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler ml-3 ml-lg-0 position-relative" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon d-none"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="banner-content">
+    <div class="container text-center text-white">
+      <h1 class="text-uppercase"  data-aos="fade-up">
+        <span class="d-block">Hello</span>
+         Enjoy Your Vactions
+        <span class="d-block">with visitylux</span>
+      </h1>
+      <p>Our services remain stylish, modern, forward thinking globalleader of hospitality and we help to make traveliing and to enjoy there vacations with our smart design, innovative resturant concepts unique activities, nature and authentic hospitality.</p>
+      <a href="#" class="btn">MORE INFO</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!--        Check In        -->
+<section class="check-in" id="check-in">
+  <div class="container">
+    <form method="post" name="check-form" class="check-form" id="check-form" action="#">
+      <div class="d-flex flex-wrap check-form-wrapper shadow bg-white">
+        <div class="check-form-inputs">
+          <div class="row">
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pr-sm-0">
+                  <label for="check-in-date" class="mb-0">Check-in: *</label>
+                  <input type="date" class="form-control" name="check-in-date" id="check-in-date" required>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pr-lg-0">
+                  <label for="check-out" class="mb-0">Check-out: *</label>
+                  <input type="date" class="form-control" name="check-out" id="check-out" required>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pr-sm-0">
+                  <label for="adults" class="mb-0">Adults:</label>
+                  <select name="adults" id="adults" class="browser-default custom-select form-control">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+                
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <label for="children" class="mb-0">Children:</label>
+                  <select name="children" id="children" class="browser-default custom-select form-control">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div>
+          <button type="submit" class="btn w-100 h-100 d-flex align-items-center justify-content-center"  data-aos="fade-down">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>  
+
+
+
+<!--        Welcome        -->
+<section class="welcome" id="welcome">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 position-relative welcome-box mb-4 mb-md-0">
+        <img src="images/welcome.png" data-aos="flip-left" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 pl-4">
+        <h6 class="mb-0">RAISING COMFORT TO THE HIGHEST LEVEL</h6>
+        <h2>Welcome to <span>VISITILUX</span></h2>
+        <p>The Hotel Luviana is the right choice for visitors who are searching for a combination of 
+        charm and a convenient position from where to explore surroundings. The rooms are 
+        arranged on the first, second and third floors. On the top floor, there is also a charming 
+        terrace or solarium available for the use of guests, from where you can 
+        enjoy the view.</p>
+        <a href="#" class="btn com-hover">Read more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--        Luxary Accommodation        -->
+<section class="luxary-acco" id="luxary-acco">
+  <div class="container text-center">
+    <h2>Luxury accommodation</h2>
+
+    <ul class="nav nav-pills justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#luxary-rooms">Luxury Rooms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#premium-villas">Premium villas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#More+">More+</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content" data-aos="fade-up">
+      <div class="tab-pane container active p-0" id="luxary-rooms">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="luxary-box shadow">
+              <div class="overflow-hidden">
+                <img src="images/luxary-rooms-img1.png" alt="" class="img-fluid zoom-img w-100">
+              </div>
+              <div class="luxary-box-cont">
+                <h3 class="mb-0"><a href="#">Superior Double Room</a></h3>
+                <p class="mb-0">$129 per / night</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="luxary-box">
+                  <div>
+                    <img src="images/luxary-rooms-img2.png" alt="" class="img-fluid w-100">
+                  </div>
+                  <div class="luxary-box-cont shadow">
+                    <h3 class="mb-0"><a href="#">Superior Double Room</a></h3>
+                    <p class="mb-0">$129 per / night</p>
+                    <a href="#" class="more-detail">more details+</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="luxary-box">
+                  <div>
+                    <img src="images/luxary-rooms-img2.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="luxary-box-cont shadow">
+                    <h3 class="mb-0"><a href="#">Superior Double Room</a></h3>
+                    <p class="mb-0">$129 per / night</p>
+                    <a href="#" class="more-detail">more details+</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="luxary-box">
+                  <div>
+                    <img src="images/luxary-rooms-img2.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="luxary-box-cont shadow">
+                    <h3 class="mb-0"><a href="#">Superior Double Room</a></h3>
+                    <p class="mb-0">$129 per / night</p>
+                    <a href="#" class="more-detail">more details+</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="luxary-box">
+                  <div>
+                    <img src="images/luxary-rooms-img2.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="luxary-box-cont shadow">
+                    <h3 class="mb-0"><a href="#">Superior Double Room</a></h3>
+                    <p class="mb-0">$129 per / night</p>
+                    <a href="#" class="more-detail">more details+</a>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="luxary-box shadow">
+              <div class="overflow-hidden">
+                <img src="images/luxary-rooms-img1.png" alt="" class="img-fluid zoom-img w-100">
+              </div>
+              <div class="luxary-box-cont">
+                <h3 class="mb-0"><a href="#">Superior Double Room</a></h3>
+                <p class="mb-0">$129 per / night</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="luxary-box shadow">
+              <div class="overflow-hidden">
+                <img src="images/luxary-rooms-img1.png" alt="" class="img-fluid zoom-img w-100">
+              </div>
+              <div class="luxary-box-cont">
+                <h3 class="mb-0"><a href="#">Superior Double Room</a></h3>
+                <p class="mb-0">$129 per / night</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="luxary-box shadow">
+              <div class="overflow-hidden">
+                <img src="images/luxary-rooms-img1.png" alt="" class="img-fluid zoom-img w-100">
+              </div>
+              <div class="luxary-box-cont">
+                <h3 class="mb-0"><a href="#">Superior Double Room</a></h3>
+                <p class="mb-0">$129 per / night</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="luxary-box shadow">
+              <div class="overflow-hidden">
+                <img src="images/luxary-rooms-img1.png" alt="" class="img-fluid zoom-img w-100">
+              </div>
+              <div class="luxary-box-cont">
+                <h3 class="mb-0"><a href="#">Superior Double Room</a></h3>
+                <p class="mb-0">$129 per / night</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane container fade p-0" id="premium-villas">...</div>
+      <div class="tab-pane container fade p-0" id="More+">...</div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--        View One Time        -->
+<section class="view-one-time" id="view-one-time">
+  <div class="container">
+    <div class="row align-items-center flex-column-reverse flex-lg-row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="view-one-cont">
+          <div class="view-cont-wrapper m-auto">
+            <h3 class="text-uppercase">View one time at our luxury transportation to make your route safe and joyful </h3>
+            <p>Quisque vel mi nec massa euismod vestibulum. Integer vel faucibus dolor. In vitae sapien elit. Quisque tempor lorem nibh. </p>
+            
+            <ol class="pl-3 mt-4">
+              <li>Limousine</li>
+              <li>Yacht</li>
+              <li>Private jet</li>
+              <li>Helicopters</li>
+              <li>& more luxury transports</li>
+            </ol>
+
+            <a href="#" class="btn com-hover1">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mb-4 mb-lg-0" data-aos="zoom-in">
+        <div class="row mr-0 ml-0">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 p-0">
+            <img src="images/view-img1.png" alt="" class="img-fluid w-100 pl-1 pr-1 mb-2">
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 p-0">
+            <img src="images/view-img2.png" alt="" class="img-fluid w-100 pl-1 pr-1 mb-2">
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 p-0">
+            <img src="images/view-img3.png" alt="" class="img-fluid w-100 pl-1 pr-1 mb-2">
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 p-0">
+            <img src="images/view-img4.png" alt="" class="img-fluid w-100 pl-1 pr-1 mb-2">
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 p-0">
+            <img src="images/view-img5.png" alt="" class="img-fluid w-100 pl-1 pr-1 mb-2">
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-6 p-0 d-flex align-items-center justify-content-center">
+            <a href="#" class="view-more">View More ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--        Luxary Marraige        -->
+<section class="welcome luxury-marriage" id="luxury-marriage">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-4 mb-md-0">
+        <img src="images/luxary-marriage.png" data-aos="flip-right" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 pl-4">
+        <h2>Luxury Marriage Vacations</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in luctus nulla. Pellentesque est dui, volutpat a elementum vitae, congue quis leo. Etiam placerat porttitor nibh, eget vehiculaaccumsanullamcorper lacinia, est nibh fermentum lectus, fermentum iaculis augue ipsum sed urna.<br><br>
+        Quisque vel mi nec massa euismod vestibulum. Integer vel faucibus dolor. In vitae sapien elit. Quisque tempor lorem nibh.
+        </p>
+        <a href="#" class="btn com-hover">Read more+</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--        Amazing Ride        -->
+<section class="amazing-ride background" id="amazing-ride">
+  <div class="container text-center">
+    <h2 class="text-white font-weight-light">Take a amazing ride to our luxuries, <span class="d-block">we are providing</span></h2>
+    <a href="#" class="btn com-hover1" data-aos="fade-up" data-aos-anchor-placement="top-bottom">REGISTER NOW</a>
+  </div>
+</section>
+
+
+
+<!--        Client Says        -->
+<section class="client-says" id="client-says">
+  <div class="container">
+    <h2 class="text-center">What are Client saying about us?</h2>
+
+    <div class="owl-carousel owl-theme client-carousel">
+      <div class="item">
+        <div class="row align-items-center">
+          <div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12">
+            <img src="images/client-img1.png" alt="" class="img-fluid mx-auto d-block">
+          </div>
+
+          <div class="col-xl-8 col-lg-8 col-md-9 col-sm-12 col-12">
+            <div class="client-review">
+              <div class="client-review-wrapper m-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+
+                <div class="text-right">
+                  <h6 class="client-name mb-0">Lorem Ipsum</h6>
+                  <h4 class="client-designation">United States</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="row align-items-center">
+          <div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12">
+            <img src="images/client-img1.png" alt="" class="img-fluid mx-auto d-block">
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-9 col-sm-12 col-12">
+            <div class="client-review">
+              <div class="client-review-wrapper m-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+
+                <div class="text-right">
+                  <h6 class="client-name mb-0">Lorem Ipsum</h6>
+                  <h4 class="client-designation">United States</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="row align-items-center">
+          <div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12">
+            <img src="images/client-img1.png" alt="" class="img-fluid mx-auto d-block">
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-9 col-sm-12 col-12">
+            <div class="client-review">
+              <div class="client-review-wrapper m-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+
+                <div class="text-right">
+                  <h6 class="client-name mb-0">Lorem Ipsum</h6>
+                  <h4 class="client-designation">United States</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  </div>
+</section>
+
+
+
+<!--        Book Your Best        -->
+<section class="book-your-best" id="book-your-best">
+  <div class="container text-center text-md-left">
+    <div class="row">
+      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 mb-4 mb-md-0">
+        <h2>Book your best offer <span class="d-block">to Enjoy your <span>vacations!?</span></span></h2>
+      </div>
+
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 align-self-md-end">
+        <form action="#">
+          <div class="form-check-inline">
+            <label class="myform-check-label" for="check1">Transportation
+              <input type="checkbox" name="check1" id="check1" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="myform-check-label" for="check2">Accommodation
+              <input type="checkbox" name="check2" id="check2">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--        CardBox        -->
+<section class="cardBox" id="cardBox">
+  <div class="container">
+    <div class="cardBox-wrapper shadow">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-3 mb-md-0">
+          <div class="d-flex flex-wrap justify-content-between align-items-center cardBox-gallery">
+            <div class="main-box-img">
+              <img src="images/cardbox-img1.png" data-aos="fade-up" alt="" class="img-fluid w-100 pr-sm-3 pb-3">
+            </div>
+
+            <div class="gallyer-box-imgs d-flex flex-wrap d-sm-block justify-content-between justify-content-sm-start">
+              <div>
+                <img src="images/cardbox-img2.png" alt="" class="img-fluid">
+              </div>
+              <div>
+                <img src="images/cardbox-img3.png" alt="" class="img-fluid">
+              </div>
+              <div>
+                <img src="images/cardbox-img4.png" alt="" class="img-fluid">
+              </div>
+              <div>
+                <img src="images/cardbox-img5.png" alt="" class="img-fluid">
+              </div>
+              <div>
+                <img src="images/cardbox-img6.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <h3 class="mb-0">Superior Double Room</h3>
+          <p>$129 per night</p>
+          <a href="#" class="btn com-hover">View details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-center">
+      <div>
+        <h3 class="mr-4 mb-0">or</h3>
+      </div>
+      <div>
+        <a href="#" class="btn com-hover1">Make a custom offer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--        Newsletter        -->
+<section class="newsletter position-relative" id="newsletter">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="d-flex newsletterbox1 mr-auto">
+          <div>
+            <img src="images/notes.png" alt="" class="img-fluid">
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Cras vitae lacus vel.</p>
+            <a href="#" class="btn com-hover1 text-white mt-3">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="d-flex newsletterbox1 newsletterbox2  ml-auto">
+          <div>
+            <img src="images/newsletter-icon.png" alt="" class="img-fluid">
+          </div>
+          <div>
+            <h4 class="text-white">Subscribe to <span>VISITYLUX</span> Newsletter</h4>
+            <p class="text-white">Get new event notifications,  giveaways and news directly to your inbox.</p>
+            
+            <form method="post" name="newsletter-form" class="newsletter-form" id="newsletter-form" action="#">
+              <div class="input-group">
+                <label for="news-email" class="sr-only"></label>
+                <input type="email" class="form-control bg-white" name="news-email" id="news-email" placeholder="Enter Your Email Address" autocomplete="off" required>
+                <span class="input-group-btn">
+                  <button class="btn text-white w-100 h-100 d-flex align-items-center com-hover" type="submit">Submit</button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="footer">
+    <div class="container text-center text-lg-left">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 mb-3 mb-lg-0">
+          <a href="./"><img src="images/footer-logo.png" alt="logo"></a>
+        </div>
+
+        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+          <ul class="d-flex justify-content-center justify-content-lg-end flex-wrap">
+            <li><a href="#">About NCLC</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Building Hours</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 mb-3 mb-md-0">
+          <p class="mb-0 text-white">©Copyright 2021 - MicroSouls. All Rights Reserved.</p>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+          <ul class="d-flex justify-content-center justify-content-md-end flex-wrap" data-aos="fade-down">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="https://use.fontawesome.com/b5ea8d0605.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="owl/js/owl.carousel.min.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
